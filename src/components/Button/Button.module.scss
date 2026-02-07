@@ -1,0 +1,22 @@
+.button {
+  --height: 3rem;
+  height: var(--height);
+  width: var(--height);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: none;
+  font: inherit;
+  background-color: var(--color-primary);
+  color: white;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  &:hover,
+  &:focus {
+    //darken using the
+    background-color: hsl(from var(--color-primary) h s calc(l - 10));
+  }
+}

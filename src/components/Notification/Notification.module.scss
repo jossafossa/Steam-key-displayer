@@ -1,0 +1,14 @@
+.notification {
+  background-color: var(--color-dark);
+  color: white;
+  padding: 1rem 1.25rem;
+  opacity: 1;
+  transition: 1s ease;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--color-dark-dark);
+}
+
+.isInvisible {
+  opacity: 0;
+}

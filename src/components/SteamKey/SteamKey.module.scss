@@ -1,0 +1,32 @@
+.steamKey {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  height: 4rem;
+  padding-right: 0.5rem;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 100px;
+  background-color: var(--color-light);
+  outline: 0.25rem solid var(--color-secondary);
+  cursor: pointer;
+
+  > input {
+    cursor: pointer;
+    min-width: 0;
+    background-color: transparent;
+    align-self: stretch;
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0;
+    padding-inline: 1rem;
+    font-family: var(--font-mono);
+    font-size: 1em;
+    font-size: 125%;
+    text-align: center;
+    color: hsl(from var(--color-dark) h s calc(l + 20));
+  }
+}
