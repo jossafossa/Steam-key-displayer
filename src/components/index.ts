@@ -5,3 +5,5 @@ export * from "./NotifyContext";
 export * from "./Notifications";
 export * from "./Notification";
 export * from "./Heading";
+export * from "./PlayMp3";
+export * from "./Confetti";

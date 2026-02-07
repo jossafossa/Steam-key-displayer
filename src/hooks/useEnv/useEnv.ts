@@ -3,6 +3,7 @@ export const useEnv = () => {
   const title = import.meta.env.VITE_TITLE;
   const subtitle = import.meta.env.VITE_SUBTITLE;
   const keys = import.meta.env.VITE_KEYS;
+  const backgroundSong = import.meta.env.VITE_BACKGROUND_SONG;
 
   if (!keys) {
     throw new Error(
@@ -12,6 +13,7 @@ export const useEnv = () => {
 
   return {
     backgroundImage: backgroundImage as string | undefined,
+    backgroundSong: backgroundSong as string | undefined,
     title: title as string | undefined,
     subtitle: subtitle as string | undefined,
     keys: keys as string,

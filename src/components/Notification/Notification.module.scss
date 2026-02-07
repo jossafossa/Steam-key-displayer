@@ -3,12 +3,26 @@
   color: white;
   padding: 1rem 1.25rem;
   opacity: 1;
-  transition: 1s ease;
+  transition: 0.25s ease;
   font-size: 1.25rem;
   border-radius: 0.5rem;
   border: 2px solid var(--color-dark-dark);
+
+  animation: 0.25s animateIn ease;
+}
+
+@keyframes animateIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .isInvisible {
+  transform: translateX(100%);
   opacity: 0;
 }

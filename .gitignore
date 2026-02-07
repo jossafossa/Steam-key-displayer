@@ -24,4 +24,4 @@ dist-ssr
 
 
 .env
-public/images/
+public/private/
