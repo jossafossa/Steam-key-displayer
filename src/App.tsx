@@ -9,11 +9,13 @@ function App() {
 
   return (
     <NotifyProvider>
-      <img
-        className={styles.backgroundImage}
-        src={backgroundImage}
-        alt="Background"
-      />
+      {backgroundImage && (
+        <img
+          className={styles.backgroundImage}
+          src={backgroundImage}
+          alt="Background"
+        />
+      )}
       <div className={styles.app}>
         {title && <Heading level={1}>{title}</Heading>}
         {subtitle && <Heading level={2}>{subtitle}</Heading>}
