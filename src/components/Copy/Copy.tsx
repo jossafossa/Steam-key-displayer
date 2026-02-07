@@ -1,4 +1,4 @@
-import type { MouseEvent, PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 
 type CopyProps = {
   value: string;
@@ -10,8 +10,7 @@ export const Copy = ({
   children,
   onCopy,
 }: PropsWithChildren<CopyProps>) => {
-  const handleCopy = (event: MouseEvent<HTMLDivElement>) => {
-    event.stopPropagation();
+  const handleCopy = () => {
     onCopy?.(value);
     navigator.clipboard.writeText(value);
   };
